@@ -1,0 +1,31 @@
+.Panel
+  margin: 2rem 0
+  border: 1px solid #D3DBDC
+  border-radius: 3px
+
+  &:first-child
+    margin-top: 0
+
+  &:last-child
+    margin-bottom: 0
+
+.Panel-header,
+.Panel-body
+  padding: .75rem 1.25rem
+
+.Panel-header
+  border-bottom: 1px solid #D3D8DC
+
+  h2
+    +text-header-s
+
+.Panel-body
+  +text-base
+
++screen-m
+  .Panel
+    padding: 0 2rem
+
+  .Panel-header,
+  .Panel-body
+    padding: 1.25rem 0

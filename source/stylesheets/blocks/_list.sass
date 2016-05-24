@@ -1,0 +1,25 @@
+.List
+  +clearfix
+
+.List-item
+  padding: .5rem 0
+
+.List-itemLabel
+  color: darken(#BACACC, 5%)
+
+.List-itemValue
+
++screen-s
+  .List-item
+    +clearfix
+    float: left
+    width: 50%
+
++screen-m
+  .List-itemLabel
+    float: left
+    width: 30%
+
+  .List-itemValue
+    float: left
+    width: 70%

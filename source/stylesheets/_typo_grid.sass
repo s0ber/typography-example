@@ -1,0 +1,99 @@
+// Breakpoints
+$breakpoint-xs: 450px
+$breakpoint-s: 600px
+$breakpoint-m: 800px
+$breakpoint-l: 1100px
+$breakpoint-xl: 1300px
+
+=screen-xs
+  @media (min-width: $breakpoint-xs)
+    @content
+
+=screen-s
+  @media (min-width: $breakpoint-s)
+    @content
+
+=screen-m
+  @media (min-width: $breakpoint-m)
+    @content
+
+=screen-l
+  @media (min-width: $breakpoint-l)
+    @content
+
+=screen-xl
+  @media (min-width: $breakpoint-xl)
+    @content
+
+$basePx: 14px
+$base: 1
+$baseRem: 1rem
+$baseEm: 1em
+
+$baseLineHeight: 1.6
+
+$typoRatio: 1.07
+$screenScaleRatio: 1.02
+
+$typoScale-2: $base / $typoRatio / $typoRatio
+$typoScale-1: $base / $typoRatio
+$typoScale0: $base
+$typoScale1: $typoScale0 * $typoRatio
+$typoScale2: $typoScale1 * $typoRatio
+$typoScale3: $typoScale2 * $typoRatio
+$typoScale4: $typoScale3 * $typoRatio
+$typoScale5: $typoScale4 * $typoRatio
+$typoScale6: $typoScale5 * $typoRatio
+$typoScale7: $typoScale6 * $typoRatio
+
+$screenScale-1: $base / $screenScaleRatio
+$screenScale0: $base
+$screenScale1: $screenScale0 * $screenScaleRatio
+$screenScale2: $screenScale1 * $screenScaleRatio
+$screenScale3: $screenScale2 * $screenScaleRatio
+$screenScale4: $screenScale3 * $screenScaleRatio
+$screenScale5: $screenScale4 * $screenScaleRatio
+
+html
+  width: 100%
+  height: 100%
+  max-height: 100%
+
+html, button, input, textarea, label
+  font-size: $basePx * $screenScale-1
+  line-height: $baseLineHeight
+
++screen-m
+  html, button, input, textarea, label
+    font-size: $basePx * $screenScale0
+
++screen-l
+  html, button, input, textarea, label
+    font-size: $basePx * $screenScale1
+
++screen-xl
+  html, button, input, textarea, label
+    font-size: $basePx * $screenScale2
+
+=text-xs
+  font-size: $baseEm * $typoScale-2
+
+=text-s
+  font-size: $baseEm * $typoScale-1
+
+=text-base
+  font-size: $baseEm * $typoScale0
+
+=text-large
+  font-size: $baseEm * $typoScale1
+
+=text-header-s
+  font-size: $baseEm * $typoScale3
+
+=text-header-m
+  font-size: $baseEm * $typoScale4
+  line-height: $baseLineHeight * $typoScale-1
+
+=text-header-l
+  font-size: $baseEm * $typoScale7
+  line-height: $baseLineHeight * $typoScale-2
