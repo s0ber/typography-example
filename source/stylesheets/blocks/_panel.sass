@@ -9,15 +9,20 @@
   &:last-child
     margin-bottom: 0
 
-.Panel-header,
+.Panel-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid #D3D8DC
+  padding: .75rem .75rem .75rem 1.25rem
+
 .Panel-body
   padding: .75rem 1.25rem
 
-.Panel-header
-  border-bottom: 1px solid #D3D8DC
+.Panel-headerText
+  +text-header-s
 
-  h2
-    +text-header-s
+.Panel-actions
 
 .Panel-body
   +text-base
