@@ -33,7 +33,7 @@ $baseEm: 1em
 $baseLineHeight: 1.6
 
 $typoRatio: 1.07
-$screenScaleRatio: 1.02
+$screenScaleRatio: 1.01
 
 $typoScale-2: $base / $typoRatio / $typoRatio
 $typoScale-1: $base / $typoRatio
@@ -63,17 +63,21 @@ html, button, input, textarea, label
   font-size: $basePx * $screenScale-1
   line-height: $baseLineHeight
 
-+screen-m
++screen-s
   html, button, input, textarea, label
     font-size: $basePx * $screenScale0
 
-+screen-l
++screen-m
   html, button, input, textarea, label
     font-size: $basePx * $screenScale1
 
-+screen-xl
++screen-l
   html, button, input, textarea, label
     font-size: $basePx * $screenScale2
+
++screen-xl
+  html, button, input, textarea, label
+    font-size: $basePx * $screenScale4
 
 =text-xs
   font-size: $baseRem * $typoScale-2

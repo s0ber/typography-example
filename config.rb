@@ -56,8 +56,6 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :fonts_dir, 'stylesheets/fonts'
-
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', 'ie >= 8']
 end

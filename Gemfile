@@ -18,5 +18,3 @@ gem 'rails-sass-images', '0.5.0'
 gem 'middleman-autoprefixer'
 
 gem 'slim'
-
-gem 'font-awesome-middleman'
