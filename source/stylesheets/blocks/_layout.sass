@@ -1,6 +1,25 @@
 .Layout
-  padding: 0 1.25rem
+
+.Layout-menu
+  background: #F9FAFA
+  border-bottom: 1px solid #C7D4D5
+
+.Layout-content
+
+.Layout-contentInner
+  +clearfix
+  border-left: 1px solid #C7D4D5
 
 +screen-m
   .Layout
-    padding: 0 2rem
+    display: flex
+    justify-content: space-between
+
+  .Layout-menu
+    width: 15rem
+    border-bottom: 0
+
+  .Layout-content
+    width: 100%
+    padding-left: 15rem
+    margin-left: -15rem
