@@ -1,11 +1,25 @@
 .Menu
+  +clearfix
 
 .Menu-item
   height: 4rem
   line-height: 4rem
-  padding: 0 2rem
+  padding: 0 1.25rem
   color: #8DA6AA
 
   &.is-active
     font-weight: bold
     color: #3F4040
+
++screen-s
+  .Menu-item
+    float: left
+    height: 3.5rem
+    line-height: 3.5rem
+
++screen-m
+  .Menu-item
+    float: none
+    padding: 0 2rem
+    height: 4rem
+    line-height: 4rem
